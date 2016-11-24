@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Post": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Commune": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Education": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "PPhone": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "PEmail": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Citizenship": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "PCiti": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "PStat": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Statement": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "PEdu": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Activity": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Theme": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "APerson": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Errors": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  }
+}
