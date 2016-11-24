@@ -91,5 +91,13 @@
   "Errors": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "Room": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
