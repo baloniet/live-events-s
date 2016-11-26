@@ -80,15 +80,7 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "Theme": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "APerson": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "Errors": {
     "dataSource": "liveEventsDB",
     "public": true
   },
@@ -97,6 +89,22 @@
     "public": true
   },
   "Event": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Errors": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Theme": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VEvent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VActivity": {
     "dataSource": "liveEventsDB",
     "public": true
   }

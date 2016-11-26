@@ -1,5 +1,5 @@
 {
-  "name": "Errors",
+  "name": "VActivity",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,12 +7,11 @@
   },
   "mysql": {
     "schema": "live_events",
-    "table": "errors"
+    "table": "v_activity"
   },
   "properties": {
     "id": {
       "type": "Number",
-      "id": true,
       "required": true,
       "length": null,
       "precision": 10,
@@ -26,54 +25,6 @@
         "nullable": "N"
       },
       "_selectable": false
-    },
-    "gui": {
-      "type": "String",
-      "required": false,
-      "length": 45,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "gui",
-        "dataType": "varchar",
-        "dataLength": 45,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "msg": {
-      "type": "String",
-      "required": true,
-      "length": 1000,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "msg",
-        "dataType": "varchar",
-        "dataLength": 1000,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "companyId": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "company_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
     },
     "cdate": {
       "type": "Date",
@@ -91,32 +42,64 @@
       },
       "_selectable": true
     },
-    "fdate": {
-      "type": "Date",
-      "required": false,
-      "length": null,
+    "name": {
+      "type": "String",
+      "required": true,
+      "length": 200,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "fDate",
-        "dataType": "timestamp",
-        "dataLength": null,
+        "columnName": "name",
+        "dataType": "varchar",
+        "dataLength": 200,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "content": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "content",
+        "dataType": "varchar",
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
       },
       "_selectable": true
     },
-    "response": {
+    "themeId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "theme_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "color": {
       "type": "String",
       "required": false,
-      "length": 1000,
+      "length": 8,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "response",
+        "columnName": "color",
         "dataType": "varchar",
-        "dataLength": 1000,
+        "dataLength": 8,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
