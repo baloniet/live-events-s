@@ -88,10 +88,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "Event": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "Errors": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -100,11 +96,15 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VEvent": {
+  "VActivity": {
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VActivity": {
+  "Event": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VEvent": {
     "dataSource": "liveEventsDB",
     "public": true
   }
