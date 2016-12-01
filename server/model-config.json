@@ -107,5 +107,9 @@
   "VEvent": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VPevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
