@@ -1,5 +1,5 @@
 {
-  "name": "VEvent",
+  "name": "VMember",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "live_events",
-    "table": "v_event"
+    "table": "v_member"
   },
   "properties": {
     "id": {
@@ -26,53 +26,53 @@
       },
       "_selectable": false
     },
-    "name": {
+    "firstname": {
       "type": "String",
-      "required": false,
-      "length": 200,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "name",
-        "dataType": "varchar",
-        "dataLength": 200,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "content": {
-      "type": "String",
-      "required": false,
-      "length": 2000,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "content",
-        "dataType": "varchar",
-        "dataLength": 2000,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "roomId": {
-      "type": "Number",
       "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
+      "length": 100,
+      "precision": null,
+      "scale": null,
       "mysql": {
-        "columnName": "room_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
+        "columnName": "firstName",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "lastname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "lastName",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "birthdate": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "birthDate",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
     },
     "cdate": {
       "type": "Date",
@@ -90,46 +90,14 @@
       },
       "_selectable": true
     },
-    "starttime": {
-      "type": "Date",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "starttime",
-        "dataType": "timestamp",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "endtime": {
-      "type": "Date",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "endtime",
-        "dataType": "timestamp",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "isday": {
+    "isteacher": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 3,
       "scale": 0,
       "mysql": {
-        "columnName": "isDay",
+        "columnName": "isTeacher",
         "dataType": "tinyint",
         "dataLength": null,
         "dataPrecision": 3,
@@ -138,65 +106,33 @@
       },
       "_selectable": true
     },
-    "activityId": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "activity_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "meventId": {
+    "isvolunteer": {
       "type": "Number",
       "required": false,
       "length": null,
-      "precision": 10,
+      "precision": 3,
       "scale": 0,
       "mysql": {
-        "columnName": "mevent_id",
-        "dataType": "int",
+        "columnName": "isVolunteer",
+        "dataType": "tinyint",
         "dataLength": null,
-        "dataPrecision": 10,
+        "dataPrecision": 3,
         "dataScale": 0,
         "nullable": "Y"
       },
       "_selectable": true
     },
-    "color": {
-      "type": "String",
-      "required": false,
-      "length": 8,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "color",
-        "dataType": "varchar",
-        "dataLength": 8,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "cnt": {
+    "ismember": {
       "type": "Number",
       "required": false,
       "length": null,
-      "precision": 19,
+      "precision": 3,
       "scale": 0,
       "mysql": {
-        "columnName": "cnt",
-        "dataType": "bigint",
+        "columnName": "isMember",
+        "dataType": "tinyint",
         "dataLength": null,
-        "dataPrecision": 19,
+        "dataPrecision": 3,
         "dataScale": 0,
         "nullable": "Y"
       },

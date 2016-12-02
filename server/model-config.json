@@ -104,11 +104,15 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VEvent": {
+  "VPevent": {
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VPevent": {
+  "VMember": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VEvent": {
     "dataSource": "liveEventsDB",
     "public": true
   }
