@@ -115,5 +115,9 @@
   "VEvent": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "EPerson": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
