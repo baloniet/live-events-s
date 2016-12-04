@@ -1,5 +1,5 @@
 {
-  "name": "EPerson",
+  "name": "VMeventA",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,12 +7,11 @@
   },
   "mysql": {
     "schema": "live_events",
-    "table": "e_person"
+    "table": "v_mevent_a"
   },
   "properties": {
     "id": {
       "type": "Number",
-      "id": true,
       "required": true,
       "length": null,
       "precision": 10,
@@ -43,80 +42,48 @@
       },
       "_selectable": false
     },
-    "eventId": {
-      "type": "Number",
+    "firstname": {
+      "type": "String",
       "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
+      "length": 100,
+      "precision": null,
+      "scale": null,
       "mysql": {
-        "columnName": "event_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
+        "columnName": "firstname",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "N"
       },
       "_selectable": false
     },
-    "cdate": {
-      "type": "Date",
-      "required": false,
-      "length": null,
+    "lastname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "cDate",
-        "dataType": "datetime",
-        "dataLength": null,
+        "columnName": "lastname",
+        "dataType": "varchar",
+        "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     },
-    "odate": {
-      "type": "Date",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "oDate",
-        "dataType": "datetime",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "note": {
+    "personName": {
       "type": "String",
       "required": false,
-      "length": 500,
+      "length": 201,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "note",
+        "columnName": "person_name",
         "dataType": "varchar",
-        "dataLength": 500,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "adate": {
-      "type": "Date",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "aDate",
-        "dataType": "datetime",
-        "dataLength": null,
+        "dataLength": 201,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"

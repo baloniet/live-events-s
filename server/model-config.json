@@ -72,10 +72,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "Person": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "Activity": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -104,10 +100,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VPevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VMember": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -116,7 +108,33 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
+  "VStatPer": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
   "EPerson": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VPevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMeventA": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMeventE": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VAperson": {
     "dataSource": "liveEventsDB",
     "public": true
   }
