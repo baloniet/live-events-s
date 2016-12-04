@@ -137,5 +137,13 @@
   "VAperson": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VMevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VAmember": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
