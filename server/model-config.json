@@ -145,5 +145,9 @@
   "VAmember": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "PAddress": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }

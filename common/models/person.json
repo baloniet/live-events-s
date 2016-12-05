@@ -177,6 +177,11 @@
       "type": "hasOne",
       "model": "PCiti",
       "foreignKey": ""
+    },
+    "addss": {
+      "type": "hasMany",
+      "model": "PAddress",
+      "foreignKey": ""
     }
   },
   "acls": [],
