@@ -159,7 +159,7 @@
   "validations": [],
   "relations": {
     "edu": {
-      "type": "hasOne",
+      "type": "hasMany",
       "model": "PEdu",
       "foreignKey": ""
     },
@@ -174,7 +174,7 @@
       "foreignKey": ""
     },
     "citi": {
-      "type": "hasOne",
+      "type": "hasMany",
       "model": "PCiti",
       "foreignKey": ""
     },

@@ -29,7 +29,7 @@
     },
     "email": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 45,
       "precision": null,
       "scale": null,
