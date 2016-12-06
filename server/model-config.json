@@ -122,10 +122,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VPevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VMeventA": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -138,15 +134,19 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VMevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VAmember": {
     "dataSource": "liveEventsDB",
     "public": true
   },
   "PAddress": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VPevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMevent": {
     "dataSource": "liveEventsDB",
     "public": true
   }
