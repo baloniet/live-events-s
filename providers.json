@@ -1,0 +1,16 @@
+{
+ 
+  "google-login": {
+    "provider": "auth0",
+    "module": "passport-auth0",
+    "clientID": "AUTH0_CLIENT_ID",
+    "clientSecret": "AUTH0_CLIENT_SECRET",
+    "callbackURL": "/auth/auth0/callback",
+    "authPath": "/auth/auth0",
+    "callbackPath": "/auth/auth0/callback",
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
+  }
+}
