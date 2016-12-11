@@ -17,7 +17,13 @@
       "limit": "100kb"
     },
     "cors": false,
-    "handleErrors": false
+    "handleErrors": false,
+     "sharedMethods": {
+          "*": false,
+          "findById": true,
+          "find": true,
+          "count": true
+        }
   },
   "legacyExplorer": false
 }
