@@ -6,7 +6,7 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "build:sdk": "./node_modules/.bin/lb-sdk server/server ../bs4/src/app/shared/sdk -i disabled"
+    "build:sdk": "./node_modules/.bin/lb-sdk server/server ../les/sdk -i disabled"
   },
   "dependencies": {
     "compression": "^1.0.3",
