@@ -122,14 +122,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VMeventA": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VMeventE": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VAperson": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -147,6 +139,14 @@
     "public": true
   },
   "VMevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMeventE": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMeventA": {
     "dataSource": "liveEventsDB",
     "public": true
   }
