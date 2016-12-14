@@ -104,10 +104,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VEvent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VStatPer": {
     "dataSource": "liveEventsDB",
     "public": true,
@@ -142,12 +138,20 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VMeventE": {
+  "VEvent": {
     "dataSource": "liveEventsDB",
     "public": true
   },
   "VMeventA": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VMeventE": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

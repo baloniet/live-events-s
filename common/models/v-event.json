@@ -60,7 +60,7 @@
     },
     "roomId": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -70,9 +70,9 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
     "cdate": {
       "type": "Date",
@@ -180,6 +180,38 @@
         "columnName": "color",
         "dataType": "varchar",
         "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "themename": {
+      "type": "String",
+      "required": false,
+      "length": 245,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "themeName",
+        "dataType": "varchar",
+        "dataLength": 245,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "roomname": {
+      "type": "String",
+      "required": false,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "roomName",
+        "dataType": "varchar",
+        "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
