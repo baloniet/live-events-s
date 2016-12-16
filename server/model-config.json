@@ -40,10 +40,6 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "Education": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "PPhone": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -153,5 +149,9 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Education": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
