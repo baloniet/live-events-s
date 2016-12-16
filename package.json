@@ -6,7 +6,8 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "build:sdk": "./node_modules/.bin/lb-sdk server/server ../bs4/src/app/shared/sdk -i disabled"
+    "build:sdk": "./node_modules/.bin/lb-sdk server/server ../bs4/src/app/shared/sdk -i disabled",
+    "meksis": "npm pack && mv *.tgz ../les/"
   },
   "dependencies": {
     "@mean-expert/loopback-sdk-builder": "^2.1.0-rc.3",
