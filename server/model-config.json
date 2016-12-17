@@ -14,7 +14,15 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": "true",
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": true
+        }
+      }
+    }
   },
   "AccessToken": {
     "dataSource": "db",
@@ -34,27 +42,93 @@
   },
   "Post": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "Commune": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "Education": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "PPhone": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   },
   "PEmail": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   },
   "Citizenship": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "PCiti": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   },
   "PStat": {
     "dataSource": "liveEventsDB",
@@ -62,11 +136,29 @@
   },
   "Statement": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "PEdu": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   },
   "Activity": {
     "dataSource": "liveEventsDB",
@@ -74,84 +166,232 @@
   },
   "APerson": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true,
+          "count" : false,
+          "find" : false,
+          "findById": false
+        }
+      }
+    }
   },
   "Room": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "Errors": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "Theme": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "VActivity": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
   },
   "Event": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   },
   "VMember": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
+  },
+  "VEvent": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
   },
   "VStatPer": {
     "dataSource": "liveEventsDB",
     "public": true,
     "$promise": {},
-    "$resolved": true
+    "$resolved": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false,
+          "count": false
+        }
+      }
+    }
   },
   "EPerson": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   },
   "Person": {
     "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VAperson": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VAmember": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "PAddress": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VPevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VMevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
-  "VEvent": {
-    "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "findById": true,
+          "find": true,
+          "count": true,
+          "deleteById": true,
+          "upsert": true,
+          "getPhones": true,
+          "getEmails": true,
+          "getCiti": true,
+          "getEdu": true,
+          "getAddss": true
+        }
+      }
+    }
   },
   "VMeventA": {
     "dataSource": "liveEventsDB",
     "public": true,
     "$promise": {},
-    "$resolved": true
+    "$resolved": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
   },
   "VMeventE": {
     "dataSource": "liveEventsDB",
     "public": true,
-    "$promise": {},
-    "$resolved": true
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
   },
-  "Education": {
+  "VAperson": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
+  },
+  "VAmember": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
+  },
+  "PAddress": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false,
+          "count": false,
+          "find": false,
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "VPevent": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false,
+          "count": false
+        }
+      }
+    }
+  },
+  "VMevent": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false,
+          "count": false
+        }
+      }
+    }
   }
 }
