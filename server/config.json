@@ -18,12 +18,12 @@
     },
     "cors": false,
     "handleErrors": false,
-     "sharedMethods": {
-          "*": false,
-          "findById": true,
-          "find": true,
-          "count": true
-        }
+    "sharedMethods": {
+      "*": false,
+      "findById": true,
+      "find": true,
+      "count": true
+    }
   },
   "legacyExplorer": false
 }

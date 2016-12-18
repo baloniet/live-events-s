@@ -76,7 +76,7 @@
     },
     "themeId": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -86,13 +86,13 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
     "color": {
       "type": "String",
-      "required": false,
+      "required": true,
       "length": 8,
       "precision": null,
       "scale": null,
@@ -102,9 +102,9 @@
         "dataLength": 8,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     },
     "personId": {
       "type": "Number",
@@ -121,6 +121,22 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "isrented": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "isRented",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
