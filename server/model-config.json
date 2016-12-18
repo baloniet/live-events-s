@@ -74,7 +74,9 @@
           "upsert": true
         }
       }
-    }
+    },
+    "$promise": {},
+    "$resolved": true
   },
   "PPhone": {
     "dataSource": "liveEventsDB",
@@ -172,8 +174,8 @@
         "sharedMethods": {
           "deleteById": true,
           "upsert": true,
-          "count" : false,
-          "find" : false,
+          "count": false,
+          "find": false,
           "findById": false
         }
       }
@@ -234,17 +236,6 @@
         "sharedMethods": {
           "deleteById": true,
           "upsert": true
-        }
-      }
-    }
-  },
-  "VMember": {
-    "dataSource": "liveEventsDB",
-    "public": true,
-    "options": {
-      "remoting": {
-        "sharedMethods": {
-          "findById": false
         }
       }
     }
@@ -393,5 +384,13 @@
         }
       }
     }
+  },
+  "VPerson": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMember": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
