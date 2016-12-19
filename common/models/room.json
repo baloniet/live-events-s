@@ -42,6 +42,22 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "onchart": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "onChart",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
