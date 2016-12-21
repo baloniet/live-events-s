@@ -162,10 +162,6 @@
       }
     }
   },
-  "Activity": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "APerson": {
     "dataSource": "liveEventsDB",
     "public": true,
@@ -390,6 +386,37 @@
     "public": true
   },
   "VMember": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "Template": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "ATemplate": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true,
+          "count": false,
+          "find": false,
+          "findById": false
+        }
+      }
+    }
+  },
+  "Activity": {
     "dataSource": "liveEventsDB",
     "public": true
   }
