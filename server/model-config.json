@@ -418,6 +418,18 @@
   },
   "Activity": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "findById": true,
+          "find": true,
+          "count": true,
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   }
 }
