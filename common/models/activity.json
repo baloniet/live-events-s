@@ -221,6 +221,12 @@
       "type": "hasMany",
       "model": "ATemplate",
       "foreignKey": ""
+    },
+    "templates": {
+      "type": "hasMany",
+      "model": "Template",
+      "foreignKey": "activityId",
+      "through": "ATemplate"
     }
   },
   "acls": [],
