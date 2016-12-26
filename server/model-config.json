@@ -435,5 +435,20 @@
   "VReport": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "Settings": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": true,
+          "find": true,
+          "count": true,
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   }
 }
