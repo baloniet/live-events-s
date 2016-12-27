@@ -453,6 +453,17 @@
   },
   "Project": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": true,
+          "find": true,
+          "count": true,
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   }
 }
