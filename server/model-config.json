@@ -416,7 +416,7 @@
       }
     }
   },
-  "Activity": {
+   "Activity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -450,5 +450,9 @@
         }
       }
     }
+  },
+  "Project": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
