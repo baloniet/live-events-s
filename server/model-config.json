@@ -303,6 +303,7 @@
           "getCiti": true,
           "getEdu": true,
           "getAddss": true,
+          "getStats": true,
           "getStatements": true
         }
       }

@@ -215,6 +215,11 @@
       "model": "PAddress",
       "foreignKey": ""
     },
+    "stats": {
+      "type": "hasMany",
+      "model": "PStat",
+      "foreignKey": ""
+    },
     "statements": {
       "type": "hasMany",
       "model": "Statement",

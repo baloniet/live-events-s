@@ -43,4 +43,11 @@ module.exports = function (Person) {
     Person.disableRemoteMethod('__updateById__statements', false);
     Person.disableRemoteMethod('__destroyById__statements', false);
 
+    Person.disableRemoteMethod('__create__stats', false);
+    Person.disableRemoteMethod('__delete__stats', false);
+    Person.disableRemoteMethod('__count__stats', false);
+    Person.disableRemoteMethod('__findById__stats', false);
+    Person.disableRemoteMethod('__updateById__stats', false);
+    Person.disableRemoteMethod('__destroyById__stats', false);
+
 };
