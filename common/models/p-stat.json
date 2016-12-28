@@ -78,10 +78,15 @@
   },
   "validations": [],
   "relations": {
-    "statements": {
-      "type": "hasMany",
+    "statement": {
+      "type": "belongsTo",
       "model": "Statement",
-      "foreignKey": "id"
+      "foreignKey": "statementId"
+    },
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
     }
   },
   "acls": [],

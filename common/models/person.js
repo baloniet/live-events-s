@@ -35,4 +35,12 @@ module.exports = function (Person) {
     Person.disableRemoteMethod('__findById__addss', false);
     Person.disableRemoteMethod('__updateById__addss', false);
     Person.disableRemoteMethod('__destroyById__addss', false);
+
+    Person.disableRemoteMethod('__create__statements', false);
+    Person.disableRemoteMethod('__delete__statements', false);
+    Person.disableRemoteMethod('__count__statements', false);
+    Person.disableRemoteMethod('__findById__statements', false);
+    Person.disableRemoteMethod('__updateById__statements', false);
+    Person.disableRemoteMethod('__destroyById__statements', false);
+
 };

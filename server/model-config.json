@@ -134,7 +134,18 @@
   },
   "PStat": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true,
+          "count": false,
+          "find": false,
+          "findById": false
+        }
+      }
+    }
   },
   "Statement": {
     "dataSource": "liveEventsDB",
@@ -291,7 +302,8 @@
           "getEmails": true,
           "getCiti": true,
           "getEdu": true,
-          "getAddss": true
+          "getAddss": true,
+          "getStatements": true
         }
       }
     }
