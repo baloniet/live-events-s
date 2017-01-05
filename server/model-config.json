@@ -429,7 +429,7 @@
       }
     }
   },
-   "Activity": {
+  "Activity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -473,6 +473,66 @@
           "findById": true,
           "find": true,
           "count": true,
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "Partner": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "Kind": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "Location": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "Type": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "TKind": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
           "deleteById": true,
           "upsert": true
         }
