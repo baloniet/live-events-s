@@ -61,7 +61,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "theme": {
+      "type": "belongsTo",
+      "model": "Theme",
+      "foreignKey": "themeId"
+    },
+    "kind": {
+      "type": "belongsTo",
+      "model": "Kind",
+      "foreignKey": "kindId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

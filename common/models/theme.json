@@ -61,7 +61,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "kinds": {
+      "type": "hasMany",
+      "model": "Kind",
+      "foreignKey": "themeId",
+      "through": "TKind"
+    }
+  },
   "acls": [],
   "methods": {}
 }
