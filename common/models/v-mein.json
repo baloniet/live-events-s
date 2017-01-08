@@ -26,6 +26,23 @@
       },
       "_selectable": false
     },
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "name": {
       "type": "String",
       "required": false,
@@ -234,15 +251,14 @@
       },
       "_selectable": true
     },
-    "id": {
+    "personId": {
       "type": "Number",
-      "id": true,
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "id",
+        "columnName": "person_id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
