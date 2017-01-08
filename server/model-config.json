@@ -382,18 +382,6 @@
       }
     }
   },
-  "VMevent": {
-    "dataSource": "liveEventsDB",
-    "public": true,
-    "options": {
-      "remoting": {
-        "sharedMethods": {
-          "findById": false,
-          "count": false
-        }
-      }
-    }
-  },
   "VPerson": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -535,6 +523,26 @@
         "sharedMethods": {
           "deleteById": true,
           "upsert": true
+        }
+      }
+    }
+  },
+  "VFevent": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMein": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VMevent": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false,
+          "count": false
         }
       }
     }
