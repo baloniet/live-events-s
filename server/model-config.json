@@ -224,7 +224,7 @@
       }
     }
   },
-  "VActivity": {
+    "VActivity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
