@@ -224,7 +224,7 @@
       }
     }
   },
-    "VActivity": {
+  "VActivity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -550,5 +550,21 @@
   "VLocation": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VFeventM": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VEperson": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "VStatPerExt": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
