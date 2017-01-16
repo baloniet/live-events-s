@@ -566,5 +566,9 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "VStatRoomExt": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
