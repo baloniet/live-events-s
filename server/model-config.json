@@ -570,5 +570,15 @@
   "VStatRoomExt": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VFeventT": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VStatTchExt": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
