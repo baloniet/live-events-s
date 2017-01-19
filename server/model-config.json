@@ -419,7 +419,7 @@
       }
     }
   },
-    "Activity": {
+  "Activity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -625,5 +625,9 @@
     },
     "$promise": {},
     "$resolved": true
+  },
+  "VPlocation": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
