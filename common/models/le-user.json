@@ -10,6 +10,22 @@
     "table": "le_user"
   },
   "properties": {
+    "personId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "person_id",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "name": {
       "type": "String",
       "required": true,
@@ -58,16 +74,33 @@
       },
       "_selectable": true
     },
-    "cdate": {
-      "type": "Date",
+    "isadmin": {
+      "type": "Number",
       "required": false,
       "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "isAdmin",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "auth0Id": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "length": 100,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "cDate",
-        "dataType": "timestamp",
-        "dataLength": null,
+        "columnName": "auth0_id",
+        "dataType": "varchar",
+        "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
@@ -90,39 +123,21 @@
       },
       "_selectable": false
     },
-    "auth0Id": {
-      "type": "String",
-      "id": true,
-      "required": true,
-      "length": 100,
+    "cdate": {
+      "type": "Date",
+      "required": false,
+      "length": null,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "auth0_id",
-        "dataType": "varchar",
-        "dataLength": 100,
+        "columnName": "cDate",
+        "dataType": "timestamp",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
       },
       "_selectable": false
-    },
-    "personId": {
-      "type": "Number",
-      "id": false,
-      "required": false,
-      "length": null,
-      "precision": 3,
-      "scale": 0,
-      "mysql": {
-        "columnName": "person_id",
-        "dataType": "tinyint",
-        "dataLength": null,
-        "dataPrecision": 3,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
     }
   },
   "validations": [],

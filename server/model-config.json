@@ -584,7 +584,7 @@
   "LeUser": {
     "dataSource": "liveEventsDB",
     "public": true,
-    "options": {
+        "options": {
       "remoting": {
         "sharedMethods": {
           "deleteById": true,
@@ -595,5 +595,17 @@
     },
     "$promise": {},
     "$resolved": true
+  },
+  "PLocation": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
   }
 }
