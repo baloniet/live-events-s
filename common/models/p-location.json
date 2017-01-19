@@ -61,7 +61,7 @@
     },
     "cdate": {
       "type": "Date",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

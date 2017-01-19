@@ -307,7 +307,9 @@
           "getStatements": true
         }
       }
-    }
+    },
+    "$promise": {},
+    "$resolved": true
   },
   "VMeventA": {
     "dataSource": "liveEventsDB",
@@ -417,7 +419,7 @@
       }
     }
   },
-  "Activity": {
+    "Activity": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -584,12 +586,12 @@
   "LeUser": {
     "dataSource": "liveEventsDB",
     "public": true,
-        "options": {
+    "options": {
       "remoting": {
         "sharedMethods": {
           "deleteById": true,
           "upsert": true,
-          "updateAll":true
+          "updateAll": true
         }
       }
     },
@@ -606,6 +608,22 @@
           "upsert": true
         }
       }
-    }
+    },
+    "$promise": {},
+    "$resolved": true
+  },
+  "VLeuser": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    },
+    "$promise": {},
+    "$resolved": true
   }
 }
