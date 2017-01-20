@@ -247,17 +247,6 @@
       }
     }
   },
-  "VEvent": {
-    "dataSource": "liveEventsDB",
-    "public": true,
-    "options": {
-      "remoting": {
-        "sharedMethods": {
-          "findById": false
-        }
-      }
-    }
-  },
   "VStatPer": {
     "dataSource": "liveEventsDB",
     "public": true,
@@ -651,5 +640,16 @@
   "VRoom": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VEvent": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "findById": false
+        }
+      }
+    }
   }
 }
