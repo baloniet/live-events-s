@@ -647,5 +647,9 @@
         }
       }
     }
+  },
+  "VRoom": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
