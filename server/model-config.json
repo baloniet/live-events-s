@@ -626,8 +626,26 @@
     "$promise": {},
     "$resolved": true
   },
+  "VTkind": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "themes": true
+        }
+      }
+    }
+  },
   "VPlocation": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "partners": true
+        }
+      }
+    }
   }
 }
