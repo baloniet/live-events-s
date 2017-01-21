@@ -4,7 +4,7 @@ module.exports = function (Vtkind) {
 
     Vtkind.themes = function (id, cb) {
         var ds = Vtkind.dataSource;
-        var sql = "SELECT DISTINCT theme_id, themeName FROM v_tkind where partner_id=" + id;
+        var sql = "SELECT DISTINCT theme_id, themeName FROM v_tkind where partner_id=" + id+" order by themeName";
         ds.connector.execute(sql, function (err, themes) {
             if (err)
                 console.error(err);
