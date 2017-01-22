@@ -141,7 +141,7 @@
           "deleteById": true,
           "upsert": true,
           "count": false,
-          "find": false,
+          "find": true,
           "findById": false
         }
       }
@@ -235,7 +235,7 @@
       }
     }
   },
-  "Event": {
+    "Event": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -632,7 +632,8 @@
     "options": {
       "remoting": {
         "sharedMethods": {
-          "partners": true
+          "partners": true,
+          "locations": true
         }
       }
     }

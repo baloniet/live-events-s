@@ -10,6 +10,22 @@
     "table": "v_activity"
   },
   "properties": {
+    "id": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "cdate": {
       "type": "Date",
       "required": false,
@@ -154,22 +170,21 @@
       },
       "_selectable": true
     },
-    "id": {
+    "locationId": {
       "type": "Number",
-      "id": true,
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "id",
+        "columnName": "location_id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     }
   },
   "validations": [],
