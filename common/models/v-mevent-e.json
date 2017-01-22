@@ -106,6 +106,38 @@
       },
       "_selectable": false
     },
+    "firstname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "firstname",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "lastname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "lastname",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "personName": {
       "type": "String",
       "required": false,
@@ -122,37 +154,53 @@
       },
       "_selectable": true
     },
-    "firstname": {
-      "type": "String",
+    "eacc": {
+      "type": "Number",
       "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
       "mysql": {
-        "columnName": "firstname",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "eAcc",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "lastname": {
-      "type": "String",
+    "eoff": {
+      "type": "Number",
       "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
       "mysql": {
-        "columnName": "lastname",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "eOff",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
+    },
+    "locationId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "location_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
