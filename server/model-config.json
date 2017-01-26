@@ -159,20 +159,6 @@
       }
     }
   },
-  "PEdu": {
-    "dataSource": "liveEventsDB",
-    "public": true,
-    "options": {
-      "remoting": {
-        "sharedMethods": {
-          "find": false,
-          "findById": false,
-          "count": false,
-          "upsert": true
-        }
-      }
-    }
-  },
   "APerson": {
     "dataSource": "liveEventsDB",
     "public": true,
@@ -235,7 +221,7 @@
       }
     }
   },
-    "Event": {
+  "Event": {
     "dataSource": "liveEventsDB",
     "public": true,
     "options": {
@@ -650,6 +636,46 @@
       "remoting": {
         "sharedMethods": {
           "findById": false
+        }
+      }
+    }
+  },
+  "Employment": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "deleteById": true,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "PEmp": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
+  },
+  "PEdu": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
         }
       }
     }
