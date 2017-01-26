@@ -211,6 +211,11 @@
       "model": "PEdu",
       "foreignKey": ""
     },
+    "emp": {
+      "type": "hasMany",
+      "model": "PEmp",
+      "foreignKey": ""
+    },
     "phones": {
       "type": "hasMany",
       "model": "PPhone",
