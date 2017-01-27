@@ -154,22 +154,6 @@
       },
       "_selectable": true
     },
-    "isuser": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 3,
-      "scale": 0,
-      "mysql": {
-        "columnName": "isUser",
-        "dataType": "tinyint",
-        "dataLength": null,
-        "dataPrecision": 3,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "email": {
       "type": "String",
       "required": false,
@@ -262,6 +246,54 @@
         "dataLength": null,
         "dataPrecision": 3,
         "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "isuser": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "isUser",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "mpersonId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "mperson_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "locationsids": {
+      "type": "String",
+      "required": false,
+      "length": 341,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "locationsIds",
+        "dataType": "varchar",
+        "dataLength": 341,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "Y"
       },
       "_selectable": true

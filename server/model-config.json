@@ -360,10 +360,6 @@
       }
     }
   },
-  "VPerson": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VMember": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -679,5 +675,9 @@
         }
       }
     }
+  },
+  "VPerson": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }

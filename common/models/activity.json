@@ -317,7 +317,7 @@
     }
   },
   "validations": [],
-   "relations": {
+  "relations": {
     "people": {
       "type": "hasMany",
       "model": "Person",
@@ -340,7 +340,7 @@
       "foreignKey": "activityId",
       "through": "ATemplate"
     }
-   },
+  },
   "acls": [],
   "methods": {}
 }
