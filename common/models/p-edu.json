@@ -93,7 +93,7 @@
     }
   },
   "validations": [],
-   "relations": {
+  "relations": {
     "education": {
       "type": "hasMany",
       "model": "Education",

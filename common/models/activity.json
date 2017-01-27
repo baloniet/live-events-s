@@ -282,10 +282,42 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "comment": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "comment",
+        "dataType": "varchar",
+        "dataLength": 2000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "max": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "max",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
-  "relations": {
+   "relations": {
     "people": {
       "type": "hasMany",
       "model": "Person",
@@ -308,7 +340,7 @@
       "foreignKey": "activityId",
       "through": "ATemplate"
     }
-  },
+   },
   "acls": [],
   "methods": {}
 }
