@@ -689,5 +689,13 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "VStatVisit": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VStatPlan": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
