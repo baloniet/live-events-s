@@ -679,5 +679,15 @@
   "VPerson": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VPaddress": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VStatMember": {
+    "dataSource": "liveEventsDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

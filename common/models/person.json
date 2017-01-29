@@ -249,7 +249,7 @@
     },
     "addss": {
       "type": "hasMany",
-      "model": "PAddress",
+      "model": "VPaddress",
       "foreignKey": ""
     },
     "stats": {

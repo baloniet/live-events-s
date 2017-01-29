@@ -3,7 +3,7 @@
 module.exports = function (Vplocation) {
   Vplocation.partners = function (id, cb) {
     var ds = Vplocation.dataSource;
-    var sql = "SELECT DISTINCT partner_id, partName FROM v_plocation where person_id=" + id + " order by partName";
+    var sql = "SELECT DISTINCT partner_id as id, partName as name FROM v_plocation where person_id=" + id + " order by partName";
     ds.connector.execute(sql, function (err, partners) {
       if (err)
         console.error(err);
