@@ -26,6 +26,22 @@
       },
       "_selectable": false
     },
+    "locationId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "location_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "statementId": {
       "type": "Number",
       "required": true,
@@ -42,15 +58,30 @@
       },
       "_selectable": false
     },
-    "locationId": {
+    "year": {
       "type": "Number",
-      "id": true,
       "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "location_id",
+        "columnName": "year",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "num": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "num",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,

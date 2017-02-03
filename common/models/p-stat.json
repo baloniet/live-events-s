@@ -90,21 +90,42 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "year": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "year",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "num": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "num",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
-  "relations": {
-    "statement": {
-      "type": "belongsTo",
-      "model": "Statement",
-      "foreignKey": "statementId"
-    },
-    "person": {
-      "type": "belongsTo",
-      "model": "Person",
-      "foreignKey": "personId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
