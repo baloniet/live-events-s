@@ -676,10 +676,6 @@
       }
     }
   },
-  "VPerson": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VPaddress": {
     "dataSource": "liveEventsDB",
     "public": true
@@ -695,6 +691,10 @@
     "public": true
   },
   "VStatPlan": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VPerson": {
     "dataSource": "liveEventsDB",
     "public": true
   }
