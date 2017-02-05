@@ -271,6 +271,7 @@
           "findById": true,
           "find": true,
           "count": true,
+          "create": true,
           "deleteById": true,
           "upsert": true,
           "getPhones": true,
