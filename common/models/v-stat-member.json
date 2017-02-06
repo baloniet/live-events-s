@@ -42,22 +42,6 @@
       },
       "_selectable": true
     },
-    "statementId": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "statement_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "year": {
       "type": "Number",
       "required": false,
@@ -74,21 +58,22 @@
       },
       "_selectable": true
     },
-    "num": {
+    "statementId": {
       "type": "Number",
-      "required": false,
+      "id": true,
+      "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "num",
+        "columnName": "statement_id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "Y"
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     }
   },
   "validations": [],
