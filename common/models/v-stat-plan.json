@@ -58,18 +58,34 @@
       },
       "_selectable": false
     },
+    "year": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "year",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "sumtime": {
       "type": "String",
       "required": false,
       "length": null,
-      "precision": null,
-      "scale": null,
+      "precision": 13,
+      "scale": 4,
       "mysql": {
         "columnName": "sumtime",
-        "dataType": "time",
+        "dataType": "decimal",
         "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
+        "dataPrecision": 13,
+        "dataScale": 4,
         "nullable": "Y"
       },
       "_selectable": true
