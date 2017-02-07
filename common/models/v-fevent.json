@@ -10,6 +10,22 @@
     "table": "v_fevent"
   },
   "properties": {
+    "id": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "starttime": {
       "type": "Date",
       "required": false,
@@ -45,13 +61,13 @@
     "name": {
       "type": "String",
       "required": false,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -172,19 +188,19 @@
     },
     "aname": {
       "type": "String",
-      "required": false,
-      "length": 100,
+      "required": true,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "aName",
         "dataType": "varchar",
-        "dataLength": 100,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     },
     "preg": {
       "type": "Number",
@@ -314,22 +330,21 @@
       },
       "_selectable": false
     },
-    "id": {
+    "isother": {
       "type": "Number",
-      "id": true,
-      "required": true,
+      "required": false,
       "length": null,
-      "precision": 10,
+      "precision": 3,
       "scale": 0,
       "mysql": {
-        "columnName": "id",
-        "dataType": "int",
+        "columnName": "isOther",
+        "dataType": "tinyint",
         "dataLength": null,
-        "dataPrecision": 10,
+        "dataPrecision": 3,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     }
   },
   "validations": [],

@@ -46,13 +46,13 @@
     "name": {
       "type": "String",
       "required": true,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
@@ -99,6 +99,22 @@
       "scale": 0,
       "mysql": {
         "columnName": "isRented",
+        "dataType": "tinyint",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "isother": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "mysql": {
+        "columnName": "isOther",
         "dataType": "tinyint",
         "dataLength": null,
         "dataPrecision": 3,
@@ -190,13 +206,13 @@
     "short": {
       "type": "String",
       "required": false,
-      "length": 100,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "short",
         "dataType": "varchar",
-        "dataLength": 100,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
