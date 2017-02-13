@@ -58,6 +58,22 @@
       },
       "_selectable": false
     },
+    "personName": {
+      "type": "String",
+      "required": false,
+      "length": 201,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "person_name",
+        "dataType": "varchar",
+        "dataLength": 201,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "birthdate": {
       "type": "Date",
       "required": false,
