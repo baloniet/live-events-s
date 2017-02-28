@@ -45,13 +45,13 @@
     "name": {
       "type": "String",
       "required": true,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
@@ -153,6 +153,38 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "firstname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "firstName",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "lastname": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "lastName",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
     }
   },
   "validations": [],
