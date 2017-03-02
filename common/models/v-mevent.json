@@ -45,13 +45,13 @@
     "name": {
       "type": "String",
       "required": false,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -342,6 +342,22 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "mnum": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "mnum",
+        "dataType": "varchar",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
         "nullable": "Y"
       },
       "_selectable": true
