@@ -691,11 +691,15 @@
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VStatPlan": {
+  "VPerson": {
     "dataSource": "liveEventsDB",
     "public": true
   },
-  "VPerson": {
+  "VStatPlanMonth": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VStatPlan": {
     "dataSource": "liveEventsDB",
     "public": true
   }
