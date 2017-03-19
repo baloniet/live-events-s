@@ -255,6 +255,7 @@
         "sharedMethods": {
           "find": false,
           "findById": false,
+          "deleteById": true,
           "count": false,
           "upsert": true
         }
