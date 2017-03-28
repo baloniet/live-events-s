@@ -404,7 +404,9 @@
           "find": true,
           "count": true,
           "deleteById": true,
-          "upsert": true
+          "upsert": true,
+          "copyTxtName": true,
+          "copyTxtContent": true
         }
       }
     }
