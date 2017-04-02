@@ -29,13 +29,13 @@
     "name": {
       "type": "String",
       "required": false,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -109,13 +109,13 @@
     "aname": {
       "type": "String",
       "required": true,
-      "length": 200,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "aname",
         "dataType": "varchar",
-        "dataLength": 200,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
@@ -141,13 +141,13 @@
     "ashort": {
       "type": "String",
       "required": false,
-      "length": 100,
+      "length": 2000,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "ashort",
         "dataType": "varchar",
-        "dataLength": 100,
+        "dataLength": 2000,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -185,6 +185,22 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "report": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "report",
+        "dataType": "varchar",
+        "dataLength": 2000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
