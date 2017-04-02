@@ -330,10 +330,26 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "report": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "report",
+        "dataType": "varchar",
+        "dataLength": 2000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
-  "relations": {
+   "relations": {
     "people": {
       "type": "hasMany",
       "model": "Person",
