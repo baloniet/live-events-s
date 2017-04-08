@@ -181,7 +181,8 @@
       "remoting": {
         "sharedMethods": {
           "deleteById": true,
-          "upsert": true
+          "upsert": true,
+          "isRoomFree": true
         }
       }
     }
