@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = function (Room) {
-  Room.isRoomFree = function (id, starttime, endtime, cb) {
+  Room.isRoomFree = function (id, starttime, endtime, eventId, cb) {
     var ds = Room.dataSource;
-    var sql = "select isroomfree(" + id + "," + starttime + "," + endtime + ")";
+    var sql = "select isroomfree(" + id + ",'" + starttime + "','" + endtime + "','" + eventId + "') free";
     ds.connector.execute(sql, function (err, isRoomFree) {
       if (err)
         console.error(err);
@@ -26,13 +26,19 @@ module.exports = function (Room) {
       type: 'string',
       required: true,
       description: 'start time'
-    },{
+    }, {
       arg: 'endtime',
       type: 'string',
       required: true,
       description: 'end time'
+    }, {
+      arg: 'eventId',
+      type: 'number',
+      required: true,
+      description: 'Event id'
     }],
     returns: {
+      arg: 'free',
       type: 'Object',
       root: true
     },
