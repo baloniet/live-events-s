@@ -706,5 +706,9 @@
   "VStatPlan": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "Register": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
