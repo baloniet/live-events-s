@@ -709,6 +709,16 @@
   },
   "Register": {
     "dataSource": "liveEventsDB",
-    "public": true
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "find": false,
+          "findById": false,
+          "count": false,
+          "upsert": true
+        }
+      }
+    }
   }
 }
