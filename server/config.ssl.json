@@ -26,11 +26,11 @@
     }
   },
   "legacyExplorer": false,
-  "httpMode": true,
+  "httpMode": false,
   "certConfig": {
-    "path": "/",
-    "key": "file.pem",
-    "cert": "file.crt.pem",
+    "path": "/certificate/",
+    "key": "local.pem",
+    "cert": "local.crt.pem",
     "ca": [],
     "requestCert": false,
     "rejectUnauthorized": false
