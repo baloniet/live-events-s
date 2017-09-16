@@ -720,5 +720,13 @@
         }
       }
     }
+  },
+  "VStatFull": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VStatFullExport": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
