@@ -506,10 +506,6 @@
       }
     }
   },
-  "VFevent": {
-    "dataSource": "liveEventsDB",
-    "public": true
-  },
   "VMevent": {
     "dataSource": "liveEventsDB",
     "public": true,
@@ -726,6 +722,14 @@
     "public": true
   },
   "VStatFullExport": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VPersonExport": {
+    "dataSource": "liveEventsDB",
+    "public": true
+  },
+  "VFevent": {
     "dataSource": "liveEventsDB",
     "public": true
   }
