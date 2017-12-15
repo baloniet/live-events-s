@@ -736,5 +736,9 @@
   "TvrPerson": {
     "dataSource": "liveEventsDB",
     "public": true
+  },
+  "VPstat": {
+    "dataSource": "liveEventsDB",
+    "public": true
   }
 }
